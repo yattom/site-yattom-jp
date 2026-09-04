@@ -9,6 +9,10 @@ yattom.jp の営業用サイト。Cloudflare Workers (Static Assets) でホス�
      https://miro.com/app/board/uXjVHsfkPi8=/?moveToWidget=3458764682727675075
    - サイトマップ、各ページのセクションと並び順、デザイン・トーンの方針が置いてある
    - 構成を変えたいときは、先にここを直す
+   - フレーム「yattom.jp スタイルタイル(プレゼンデザイン由来)」
+     https://miro.com/app/board/uXjVHsfkPi8=/?moveToWidget=3458764682728710391
+     色・フォント・モチーフの具体値。長年使っているプレゼンテンプレート
+     `000テンプレート2023.pptx` から抽出したもの
 2. 本文テキストは `content/*.md` を編集する。**ここが文章の編集の起点**
 3. `content/` の内容を HTML(`public/index.html`, `public/training/index.html`)に反映する
    - 当面は自動化せず、Claude Code が `.md` を読んで HTML を更新する
