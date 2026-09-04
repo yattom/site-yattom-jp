@@ -4,11 +4,16 @@ yattom.jp の営業用サイト。Cloudflare Workers (Static Assets) でホス�
 
 ## 編集ワークフロー
 
-1. ページ構成・情報アーキテクチャは Miro ボード「職務経歴・提案資料 整理」で検討する
-   https://miro.com/app/board/uXjVHsfkPi8=/
-2. 本文テキストは `content/*.md` を編集する。**ここが編集の起点**
+1. **情報アーキテクチャ・ページ構成・デザイン方針は Miro で作る。ここがサイト構成の「正」**
+   - フレーム「yattom.jp サイト構成(IA)」
+     https://miro.com/app/board/uXjVHsfkPi8=/?moveToWidget=3458764682727675075
+   - サイトマップ、各ページのセクションと並び順、デザイン・トーンの方針が置いてある
+   - 構成を変えたいときは、先にここを直す
+2. 本文テキストは `content/*.md` を編集する。**ここが文章の編集の起点**
 3. `content/` の内容を HTML(`public/index.html`, `public/training/index.html`)に反映する
    - 当面は自動化せず、Claude Code が `.md` を読んで HTML を更新する
+   - **その際、必ず先に Miro の IA フレームを参照し、構成・並び順・デザイン方針に従うこと。**
+     `.md` のテキストを流し込むだけで、構成を勝手に決めない
    - 手作業で繰り返すうちに必要な変換ルールが見えてきたら、ビルドスクリプト化を検討する
 4. commit / push すると Cloudflare が自動デプロイする
 
