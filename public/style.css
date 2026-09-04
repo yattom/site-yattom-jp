@@ -1,3 +1,142 @@
+/* yattom.jp のスタイル
+   色・フォント・モチーフは、長年使っているプレゼンテンプレート
+   000テンプレート2023.pptx から抽出した実値。
+   Miro のスタイルタイルを参照:
+   https://miro.com/app/board/uXjVHsfkPi8=/?moveToWidget=3458764682728710391 */
+
+:root {
+  --y-accent: #de006f;
+  --y-accent-dark: #b40059;
+  --y-band-start: #9f3f6f;
+  --y-band-end: #4d2eb0;
+
+  /* 帯の端の斜めは水平から41度。高さ h に対して横のずれは h * tan(49deg) = h * 1.15 */
+  --y-header-bar-h: 10px;
+  --y-header-bar-skew: 11.5px;
+  --y-rule-h: 5px;
+  --y-rule-skew: 5.8px;
+}
+
+/* Pico の primary を屋号のマゼンタに差し替える。
+   Pico 側が :root:not([data-theme=...]) で定義しているので、同じ強さで上書きする */
+:root:not([data-theme="dark"]),
+:root:not([data-theme="light"]) {
+  --pico-primary: var(--y-accent);
+  --pico-primary-background: var(--y-accent);
+  --pico-primary-hover: var(--y-accent-dark);
+  --pico-primary-hover-background: var(--y-accent-dark);
+  --pico-primary-underline: rgba(222, 0, 111, 0.5);
+  --pico-primary-focus: rgba(222, 0, 111, 0.25);
+  --pico-primary-inverse: #fff;
+
+  /* 源真ゴシック(Source Han Sans 派生)に最も近い Web フォント */
+  --pico-font-family-sans-serif: "Noto Sans JP", "Hiragino Sans", "Yu Gothic",
+    system-ui, sans-serif;
+  --pico-font-family: var(--pico-font-family-sans-serif);
+}
+
+/* 見出しはテンプレートに合わせて Light。本文は可読性を優先して通常の太さ */
+h1,
+h2 {
+  font-weight: 300;
+}
+
+/* --- ヘッダーの帯 ----------------------------------------------------
+   テンプレートのタイトル下の帯。右端が斜めのストライプに分かれて飛んでいく。
+   切り欠きの位置は元データの比率どおり */
+header.container {
+  position: relative;
+  padding-bottom: 2.5rem;
+}
+
+header.container::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 1rem;
+  height: var(--y-header-bar-h);
+  background: var(--y-accent);
+  clip-path: polygon(
+    0 100%,
+    var(--y-header-bar-skew) 0,
+    calc(79.1% + var(--y-header-bar-skew)) 0,
+    79.1% 100%,
+    82.6% 100%,
+    calc(82.6% + var(--y-header-bar-skew)) 0,
+    calc(89.3% + var(--y-header-bar-skew)) 0,
+    89.3% 100%,
+    92.9% 100%,
+    calc(92.9% + var(--y-header-bar-skew)) 0,
+    calc(96.4% + var(--y-header-bar-skew)) 0,
+    96.4% 100%,
+    98.3% 100%,
+    calc(98.3% + var(--y-header-bar-skew)) 0,
+    100% 0,
+    100% 100%
+  );
+}
+
 header hgroup {
-  margin-bottom: 2rem;
+  margin-bottom: 0;
+}
+
+header nav {
+  margin-bottom: 0.5rem;
+}
+
+/* --- 見出しの罫線 ----------------------------------------------------
+   帯と同じ41度の傾き。スライドより細くして、繰り返してもうるさくならないようにする */
+main h2 {
+  margin-bottom: 1.2rem;
+}
+
+main h2::after {
+  content: "";
+  display: block;
+  height: var(--y-rule-h);
+  margin-top: 0.5rem;
+  background: var(--y-accent);
+  clip-path: polygon(
+    0 100%,
+    var(--y-rule-skew) 0,
+    100% 0,
+    calc(100% - var(--y-rule-skew)) 100%
+  );
+}
+
+/* --- フッターの斜め帯 ------------------------------------------------
+   テンプレート右下のモチーフ。傾き約21度、マゼンタから紫へのグラデーション。
+   420x160 の箱の対角がちょうど20.8度になる */
+footer.container {
+  position: relative;
+  overflow: hidden;
+  min-height: 180px;
+  margin-top: 4rem;
+  padding-top: 2rem;
+}
+
+footer.container::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 420px;
+  height: 160px;
+  background: linear-gradient(69deg, var(--y-band-start), var(--y-band-end));
+  clip-path: polygon(
+    0 100%,
+    100% 0,
+    100% 30%,
+    30% 100%,
+    46% 100%,
+    100% 46%,
+    100% 58%,
+    58% 100%
+  );
+  pointer-events: none;
+}
+
+footer.container small {
+  position: relative;
 }
