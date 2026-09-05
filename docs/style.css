@@ -16,8 +16,10 @@
   --y-rule-h: 5px;
   --y-rule-skew: 5.8px;
 
-  /* ページ末尾の斜め帯を、どれだけフッターに食い込ませるか */
-  --y-deco-lift: 9rem;
+  /* ページ末尾の斜め帯の幅。高さは SVG の縦横比から自動で決まる */
+  --y-deco-w: min(600px, 66vw);
+  /* 帯の高さ = 幅 x 0.3508(viewBox 19667 x 6900 の比) */
+  --y-deco-h: calc(var(--y-deco-w) * 0.3508);
 }
 
 /* Pico の primary を屋号のマゼンタに差し替える。
@@ -113,18 +115,28 @@ main h2::after {
    描画順のまま SVG で再現している(HTML 側の svg.deco を参照)。
    ここでは大きさと位置だけを決める。ページ右端まで届かせたいので
    コンテナの外に置いてある */
+body {
+  position: relative;
+}
+
 footer.container {
   position: relative;
   z-index: 1;
+  display: flex;
+  align-items: flex-end;
   margin-top: 4rem;
   padding-top: 2rem;
+  /* 帯のぶんの高さを確保する。これがないと帯が本文まではみ出す */
+  min-height: var(--y-deco-h);
 }
 
+/* 帯はフローから外し、ページの右下に固定で貼り付ける。
+   フローの中で負のマージンで持ち上げると、画面幅によって帯の高さが変わるのに
+   持ち上げ量が固定のままになり、狭い画面で著作権表示より上へ飛び出してしまう */
 .deco {
-  display: block;
-  width: min(600px, 66%);
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: var(--y-deco-w);
   height: auto;
-  margin-left: auto;
-  /* フッターに食い込ませて上に寄せる。--y-deco-lift を増やすほど上に上がる */
-  margin-top: calc(-1 * var(--y-deco-lift));
 }
