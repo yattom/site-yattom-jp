@@ -15,6 +15,9 @@
   --y-header-bar-skew: 11.5px;
   --y-rule-h: 5px;
   --y-rule-skew: 5.8px;
+
+  /* ページ末尾の斜め帯を、どれだけフッターに食い込ませるか */
+  --y-deco-lift: 9rem;
 }
 
 /* Pico の primary を屋号のマゼンタに差し替える。
@@ -111,6 +114,8 @@ main h2::after {
    ここでは大きさと位置だけを決める。ページ右端まで届かせたいので
    コンテナの外に置いてある */
 footer.container {
+  position: relative;
+  z-index: 1;
   margin-top: 4rem;
   padding-top: 2rem;
 }
@@ -120,4 +125,6 @@ footer.container {
   width: min(600px, 66%);
   height: auto;
   margin-left: auto;
+  /* フッターに食い込ませて上に寄せる。--y-deco-lift を増やすほど上に上がる */
+  margin-top: calc(-1 * var(--y-deco-lift));
 }
