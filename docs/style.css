@@ -139,4 +139,6 @@ footer.container {
   bottom: 0;
   width: var(--y-deco-w);
   height: auto;
+  /* 装飾なので、上に重なっても文字の選択やクリックを邪魔しない */
+  pointer-events: none;
 }
