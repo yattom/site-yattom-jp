@@ -39,11 +39,16 @@ GitHub Pages 向けの A レコードを設定している。
 - 各ページに schema.org の JSON-LD を入れる。トップは `Person`、研修ページは `Service`。
   内容が変わったら JSON-LD の `description` などもあわせて直す
 - ページを増やしたら `docs/sitemap.xml` に URL を追記する
+- 全ページの `</head>` の直前に GA4 のタグを入れる。測定 ID は **`G-ESYWF33LKE`**。
+  ブログ(`yattom.hatenablog.com`)と `games.yattom.jp` と同じプロパティに集約しており、
+  ドメイン間の測定は GA の管理画面側で設定済みなので、タグにはその記述は不要
+- 全ページのフッターに `<a href="/privacy/">プライバシーポリシー</a>` を置く
 
 ## ファイル構成
 
 - `content/index.md` — トップページの原稿
 - `content/training.md` — 研修・ワークショップ情報ページの原稿
+- `content/privacy.md` — プライバシーポリシーの原稿
 - `docs/` — **ここだけが配信される**。`content/` や `README.md` は公開されない。
   GitHub Pages がブランチ公開で選べるのは直下か `/docs` だけなので、この名前にしている
   - `docs/index.html` / `docs/training/index.html` — 公開される HTML(`content/` から反映)
