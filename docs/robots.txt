@@ -1,0 +1,6 @@
+# このサイトの内容は、検索エンジン、AI による検索や要約、AI の学習を含めて
+# 自由に読み取ってよい。特定のクローラーを拒否する意図はない。
+User-agent: *
+Allow: /
+
+Sitemap: https://yattom.jp/sitemap.xml

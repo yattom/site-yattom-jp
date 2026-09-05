@@ -34,6 +34,11 @@ GitHub Pages 向けの A レコードを設定している。
   `training/`)と `mailto:` は付けない
 - `{.button}` が付いたリンクは `role="button"` にする
 - フロントマターの中の `<br>` はそのまま改行として出す
+- 各ページに `<link rel="canonical">` と OGP(`og:url` / `og:title` / `og:description`)を、
+  そのページ自身の URL・タイトル・description で入れる
+- 各ページに schema.org の JSON-LD を入れる。トップは `Person`、研修ページは `Service`。
+  内容が変わったら JSON-LD の `description` などもあわせて直す
+- ページを増やしたら `docs/sitemap.xml` に URL を追記する
 
 ## ファイル構成
 
@@ -45,3 +50,5 @@ GitHub Pages 向けの A レコードを設定している。
   - `docs/style.css` — Pico.css で足りない微調整のみ
   - `docs/CNAME` — 独自ドメイン `yattom.jp`。**消さないこと**(消すとカスタムドメインが外れる)
   - `docs/.nojekyll` — Jekyll のビルドを止めて、ファイルをそのまま配信させる
+  - `docs/robots.txt` — 全許可。検索・AI の学習を含めて歓迎する方針
+  - `docs/sitemap.xml` — ページを増やしたら**ここにも追記する**
