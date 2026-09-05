@@ -23,7 +23,7 @@ subheading: アジャイルコーチ、プログラマー 合同会社やっと�
 ## 連絡先 {#contact}
 
 合同会社やっとむ屋
-Email: <!-- TODO: 連絡先メールアドレスを記入 -->
+Email: [yattom@yattom.jp](mailto:yattom@yattom.jp)
 
 - [X (Twitter)](https://x.com/yattom)
 - [LinkedIn](https://www.linkedin.com/in/yattom/)
