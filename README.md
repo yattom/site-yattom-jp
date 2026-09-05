@@ -23,6 +23,14 @@ yattom.jp の営業用サイト。Cloudflare Workers (Static Assets) でホス�
 
 `.md` と HTML の内容は常に一致させる(HTML を直接直したら `.md` にも戻す)。
 
+## 生成ルール(`.md` には書かない、HTML にするときに機械的に付けるもの)
+
+- **サイト外へのリンクはすべて別タブで開く**。`target="_blank" rel="noopener"` を付ける。
+  `games.yattom.jp` も別サイトなので外部として扱う。同一サイト内(`../`、`../#contact`、
+  `training/`)と `mailto:` は付けない
+- `{.button}` が付いたリンクは `role="button"` にする
+- フロントマターの中の `<br>` はそのまま改行として出す
+
 ## ファイル構成
 
 - `content/index.md` — トップページの原稿
