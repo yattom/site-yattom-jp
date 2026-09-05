@@ -1,50 +1,58 @@
 ---
 title: 研修・ワークショップ情報 | やっとむ
-description: やっとむが対応可能な研修・ワークショップの一覧。スクラム・アジャイル導入、チームビルディング、エンジニアリングプラクティス、教育・研修プログラム。
+description: やっとむが対応可能な研修・ワークショップの一覧。アジャイル、チームビルディング、エンジニアリングプラクティス、。
 heading: 研修・ワークショップ情報
-subheading: スクラム導入からエンジニアリングプラクティス、体験型ワークショップまで対応可能
+subheading: アジャイルの紹介・導入、ソフトウェアエンジニアリング、開発手法および、チームビルディングやコミュニケーション体験型ワークショップなど対応可能です。
 ---
 
-20年以上のアジャイルコーチ・トレーナーとしての実績をもとに、研修・ワークショップを設計・実施している。
-以下は対応可能な内容の一覧。個別のご相談・お問い合わせは[こちら](../#contact)から。
+20年以上のアジャイルコーチの実績をもとに、研修およびワークショップを提供可能です。新たにデザイン、制作するのも対応可能です。
+以下はこれまで実績ある研修・ワークショップの一覧です。個別のご相談・お問い合わせは[こちら](../#contact)からお願いします。
 
-## スクラム・アジャイル導入
+## アジャイル
 
-- スクラム導入支援(導入の研修、チームの立ち上げ、定着支援)
-- スクラムマスター / プロダクトオーナー支援・メンタリング — 例: [アジャイルコーチが現場で学んだプロダクトオーナーの実際と勘所](https://www.slideshare.net/slideshow/po-69540668/69540668)
+- アジャイル導入支援(導入の研修、チームの立ち上げ、定着支援)
+- スクラムマスター / プロダクトオーナー支援・メンタリング
+  - 参考 [アジャイルコーチが現場で学んだプロダクトオーナーの実際と勘所](https://www.slideshare.net/slideshow/po-69540668/69540668)
 - アジャイル導入の現状整理・仮説マップ作成
-- インセプションデッキ策定ワークショップ
-- カンバン運用設計・伴走
-- 講演・研修「アジャイルとスクラムとは〜価値・原則・プラクティス」 — 例: [2026年版 アジャイルとスクラムとは〜価値・原則・プラクティス](https://www.docswell.com/s/yattom/5RX22E-agile-and-scrum-6hrs)
+- インセプションデッキワークショップ
+- カンバンの紹介、導入支援
+- アジャイルの基本の1日研修や、体験型学習
+  - [2026年版 アジャイルとスクラムとは〜価値・原則・プラクティス](https://www.docswell.com/s/yattom/5RX22E-agile-and-scrum-6hrs)
+  - [「宝探しアジャイルゲーム」ワークショップ](https://games.yattom.jp/treasurehunt)
+  - [カンバンゲーム](https://games.yattom.jp/kanban)
 
-## チームビルディング・ふりかえり
+## チームのコミュニケーションとプロセス改善、ふりかえり
 
 - チームビルディングワークショップ
-- ふりかえり(レトロスペクティブ)実践支援・型の導入
-- 「未来会議」形式の中長期ふりかえりファシリテーション
-- 心理的安全性ワークショップ(オリジナルカードゲーム[「心理的安全性ゲーム」](https://games.yattom.jp/safety)使用) — 例: [解説動画](https://www.youtube.com/watch?v=K-CVTM-tcMc)
-- チーム協力型ワークショップ「チームで勝て!」 — 例: [ルール説明](https://www.youtube.com/watch?v=ySQqFOsxjMw)
-- カンバンゲーム(オリジナルのカンバン学習用ボードゲーム) — 例: [カンバンゲーム](https://www.slideshare.net/slideshow/ss-37785081/37785081)
+  - 参考 [チーム協力型ワークショップ「チームで勝て!」](https://www.youtube.com/watch?v=ySQqFOsxjMw)
+- ふりかえりの紹介と導入、見学とアドバイス、ファシリテーションなど
+- [「未来会議」形式](https://www.sony.com/ja/SonyInfo/DiscoverSony/articles/202501/sdnafc/)の組織ぐるみのふりかえり支援
+- 心理的安全性ワークショップ (オリジナルカードゲーム[「心理的安全性ゲーム」](https://games.yattom.jp/safety)使用)
 
 ## エンジニアリングプラクティス
 
-- TDD(テスト駆動開発)道場・ハンズオン研修 — 例: [TDD&MOBプログラミングハンズオン](https://www.docswell.com/s/yattom/59V7YW-tdd-mob-handson)
-- モブプログラミング / ペアプログラミング導入ワークショップ — 例: [モブプロを長く続けて上手になろう](https://www.docswell.com/s/yattom/K7VYLG-mob-programming-longer-and-better)
-- コードレビュー・リファクタリング指導
-- レガシーコードからの脱却支援
-- テスト自動化・SET(Software Engineer in Test)支援 — 例: [Let's try pytest! 手軽なpytestでテストを活用しよう!](https://www.docswell.com/s/yattom/5W9WP5-Lets-try-pytest)
+- TDD(テスト駆動開発)のハンズオン研修
+  - [TDDBC (TDD Boot Camp)](https://archive-devtesting-jp.github.io/tddbc/index_archive.html) 形式のワークショップ開催
+  - 参考 [TDD&MOBプログラミングハンズオン](https://www.docswell.com/s/yattom/59V7YW-tdd-mob-handson)
+- モブプログラミング / ペアプログラミング導入ワークショップ
+  - 参考 [モブプロを長く続けて上手になろう](https://www.docswell.com/s/yattom/K7VYLG-mob-programming-longer-and-better)
+- リファクタリング
+- テスト自動化・SET(Software Engineer in Test)支援
+  - [テスト自動化とテスト駆動開発](https://www.youtube.com/watch?v=vrbMKbdV6xY)
+  - 参考 [Let's try pytest! 手軽なpytestでテストを活用しよう!](https://www.docswell.com/s/yattom/5W9WP5-Lets-try-pytest)
+- 「テストの基本」講座
+  - 参考 [テストの基本① ソフトウェア開発ライフサイクル](https://www.youtube.com/watch?v=DZ3UmveUb3Q)
+  - 参考 [テストの基本② テストレベルとテストタイプ](https://www.youtube.com/watch?v=MScpzt5ATm0)
+- AI駆動開発、エージェンティック開発
+  - [生成AIで爆速？なら爆速で選択肢を作ろう](https://www.docswell.com/s/yattom/574838-llm-generated-learning)
 
-## 教育・研修プログラム
+## エンジニアの働き方や倫理
 
-- 新人研修プログラム設計・実施(PBL形式)
-- 公開セミナー「アジャイルとスクラム」(SEカレッジにて5年以上継続実施) — 例: [アジャイルとスクラムとは〜価値・原則・プラクティス](https://www.docswell.com/s/yattom/KRY9J5-agile-and-scrum)
-- TDDBC(TDD Boot Camp)形式の研修
-- [「宝探しアジャイルゲーム」ワークショップ](https://games.yattom.jp/treasurehunt)
-- 技術教育カリキュラム設計(新人〜若手向け)
-- 「テストの基本」講座(ソフトウェア開発ライフサイクル、テストレベル・テストタイプ) — 例: [テストの基本① ソフトウェア開発ライフサイクル](https://www.youtube.com/watch?v=DZ3UmveUb3Q)
+- [プログラマーの倫理を考える](https://www.docswell.com/s/yattom/527LXG-programmers-ethics)
+- [モブプロを長く続けて上手になろう](モブプロを長く続けて上手になろう)
 
 ## お問い合わせ
 
-上記以外のテーマについても対応可能な場合がある。詳細はお気軽にご相談を。
+これ以外でも対応できるテーマがありますし、新規作成もご相談を承ります。お気軽にご相談ください。
 
 [トップページへ戻る](../)

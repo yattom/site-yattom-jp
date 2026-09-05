@@ -105,38 +105,19 @@ main h2::after {
   );
 }
 
-/* --- フッターの斜め帯 ------------------------------------------------
-   テンプレート右下のモチーフ。傾き約21度、マゼンタから紫へのグラデーション。
-   420x160 の箱の対角がちょうど20.8度になる */
+/* --- ページ末尾の斜め帯 ----------------------------------------------
+   テンプレート右下のモチーフ。EMF に入っている5枚の三角形を、元の座標と
+   描画順のまま SVG で再現している(HTML 側の svg.deco を参照)。
+   ここでは大きさと位置だけを決める。ページ右端まで届かせたいので
+   コンテナの外に置いてある */
 footer.container {
-  position: relative;
-  overflow: hidden;
-  min-height: 180px;
   margin-top: 4rem;
   padding-top: 2rem;
 }
 
-footer.container::before {
-  content: "";
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  width: 420px;
-  height: 160px;
-  background: linear-gradient(69deg, var(--y-band-start), var(--y-band-end));
-  clip-path: polygon(
-    0 100%,
-    100% 0,
-    100% 30%,
-    30% 100%,
-    46% 100%,
-    100% 46%,
-    100% 58%,
-    58% 100%
-  );
-  pointer-events: none;
-}
-
-footer.container small {
-  position: relative;
+.deco {
+  display: block;
+  width: min(600px, 66%);
+  height: auto;
+  margin-left: auto;
 }
